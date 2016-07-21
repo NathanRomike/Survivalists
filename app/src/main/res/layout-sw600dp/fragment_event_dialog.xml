@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_height="330dp"
+        android:layout_width="470dp"
+        android:id="@+id/eventCardWrapper"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@drawable/events_background"
+            />
+
+        <Button
+            android:id="@+id/closeButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:rotation="-3"
+            android:background="@android:drawable/ic_menu_close_clear_cancel" />
+
+        <TextView
+            android:id="@+id/dialogTitle"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textAlignment="center"
+            android:rotation="-3"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/dialogDescription"
+            android:layout_width="188dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginRight="43dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:rotation="-3"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/dialogConsequence"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/dialogDescription"
+            android:textColor="@android:color/black"
+            android:rotation="-3"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/eventCardWrapper"
+        android:id="@+id/eventInteractionButtons"
+        android:background="@android:color/transparent">
+
+
+        <Button
+            android:id="@+id/negativeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blank_notebook_interaction_btn"
+            android:text="Run"
+            android:textColor="@android:color/white"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/affirmativeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_marginTopPercent="20%"
+            app:layout_marginLeftPercent="20%"
+            android:background="@drawable/blank_notebook_interaction_btn"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBaseline="@+id/negativeButton"
+            android:text="Attack"
+            android:textColor="@android:color/white"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
